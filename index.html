@@ -1,0 +1,188 @@
+<!doctype html>
+
+<html class="no-js" lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDES1060 Project 2</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/foundation-datepicker.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0d29c62db8.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+
+    <!-- place your code starting here -->
+  <header>
+    <div>
+      <img src="img/Logo.png" alt="Logo" class="center">
+    </div>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-3 text-center">
+          <a href="#">Rooms</a>
+        </div>
+        <div class="cell small-3 text-center">
+        <a href="#">Golf</a>
+      </div>
+        <div class="cell small-3 text-center">
+          <a href="#">Dining</a>
+        </div>
+        <div class="cell small-3 text-center">
+          <a href="#">About</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="Hero">
+    <img src="img/golfers.jpg" alt="golfers" class="hero">
+    <div class="text">
+      <p>Welcome to paradise.</p>
+    </div>
+  </section>
+
+  <section class="Info">
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-12 medium-4">
+          <img src="img/flag.jpg">
+          <h1>Golf</h1>
+          <p>Unlimited access to private golf course, driving range and mini golf!</p>
+        </div>
+        <div class="cell small-12 medium-4">
+          <img src="img/room1.jpg">
+          <h1>Resort</h1>
+          <p>Beautifully unique rooms plus all access to bar, swimming pool, spa and club house lounge.</p>
+          </div>
+        <div class="cell small-12 medium-4">
+          <img src="img/rest.jpg">
+          <h1>Dining</h1>
+          <p>Experience 5-Star dining for breakfast, lunch and dinner with us!</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Golf">
+    <div class="title">
+      <h2>The Ultimate Golf Experience</h2>
+      <p>Enjoy unlimited access to The Green Caelum private 18 hole golf course, driving range practice, and mini golf for family fun!</p>
+    </div>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-12 medium-4">
+          <img src="img/coast.jpg">
+          <h1>Golf Course</h1>
+          <p>The Green Caelum's Private 18 Hole Links Course with carts included</p>
+        </div>
+        <div class="cell small-12 medium-4">
+          <img src="img/bucket.jpg">
+          <h1>Driving Range</h1>
+          <p>Full sized driving range practice with targets and a bar</p>
+          </div>
+        <div class="cell small-12 medium-4">
+          <img src="img/mini.jpg">
+          <h1>Mini Golf</h1>
+          <p>18 hole mini golf course fun for the whole family</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+    <!--
+    - datepicker widget (be careful when editing)
+    - displays two fields in two columns
+    - place this inside one of your page sections
+    -->
+<section class="Book">
+    <div class="grid-container book">
+      <div class="grid-x grid-margin-x">
+        <div class="cell">
+          <h2>Reservations</h2>
+          <p>Book a room or suite perfect for your needs. Suites fit for families, couples rooms and singles all available.</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+    <table class="table">
+      <thead>
+        <tr class="grid-x grid-margin-x center">
+          <th class="cell small-6 check">Check in:
+            <input type="text" class="span2" value="" id="dpd1">
+          </th>
+          <th class="cell small-6 check">Check out:
+            <input type="text" class="span2" value="" id="dpd2">
+          </th>
+        </tr>
+        <tr class="grid-x">
+          <th class="cell center">
+            <input type="submit" class="submit button radius small" value="Check Availability" data-open="confirmation-overlay">
+          </th>
+        </tr>        
+      </thead>
+    </table>
+
+    <!--
+    - overlay window with spans used to show data from datepicker
+    - edit the grid however you would like to fit your layout, but
+    - do not delete the <span class="dpd1"></span> and <span class="dpd2"></span> tags, these are used to show the user the dates they selected
+    - this section can go anywhere in your code, but to keep things organized, place it after the section where you have your date picker form
+    -->
+
+    <div id="confirmation-overlay" class="reveal" data-reveal>
+      <div class="grid-x">
+        <div class="cell large-7">
+          <div class="overlay">
+            <h1>Confirmed!</h1>
+            <h2>You've booked a room from <span class="dpd1"></span> to <span class="dpd2"></span>. We are looking forward to it!</h2>
+            <img src="img/arial.jpg">
+          </div>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
+    </div>
+
+
+  <footer>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell large-6">
+          <p>1 Golf Ln Myrtle Beach, SC, US 29575 
+          <br>(555)555-5555
+          <br>thegreencaelum@gmail.com
+          <br>@thegreencaelum all socials
+          <br><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i>
+          </p>
+        </div>
+        <div class="cell large-6 text-right">
+          <img src="img/Logo.png" alt="footer">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!--
+
+    - do not delete anything below this line
+    - do not place any code below this line
+
+    -->
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/foundation-datepicker.min.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+
+</html>

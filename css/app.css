@@ -1,0 +1,138 @@
+header {
+	background-color: darkgreen;
+  padding: 2rem 0;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 5rem;
+}
+
+a:hover {
+  color: black;
+}
+
+.logo {
+  width: 50%;
+}
+
+.Hero {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.Hero * {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.Hero img { 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-bottom: 4rem;
+}
+
+i {
+  color: white;
+  padding-right: 1rem;
+}
+
+.Hero .text {
+  padding: 5rem; /* whitespace around text */
+}
+
+.Hero .text {
+  padding: 5rem; /* whitespace around text */
+}
+
+.Hero .text p {
+  margin: 0;
+  font-family: 'Alegreya SC', serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 0 0 1.25rem rgba(0,0,0,.5);
+}
+
+@media screen and (min-width: 40em){
+  .hero .text p {
+    font-size: 5rem;
+  }
+}
+
+h1 {
+  color: darkgreen;
+  font-family: 'Alegreya SC', serif;
+}
+
+h2 {
+  color: darkgreen;
+  font-family: 'Alegreya SC', serif;
+  text-align: center;
+}
+
+.book {
+  text-align: center;
+  padding: 3rem;
+}
+
+.title {
+  text-align: center;
+  padding: 3rem;
+}
+
+.reveal {
+  background-color: darkgreen;
+}
+
+.reveal h1 {
+  color: white;
+}
+
+.reveal h2 {
+  color: white;
+}
+
+.check {
+  color: darkgreen;
+  font-family: 'Alegreya SC', serif;
+}
+
+.button {
+  background-color: darkgreen;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.button:hover {
+  color: darkgreen;
+  background-color: lightgray;
+}
+
+a {
+  color: white;
+  font-family: 'Alegreya SC', serif;
+}
+
+p {
+  color: darkgreen;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+footer {
+  background-color: darkgreen;
+  padding: 5rem 0;
+} 
+
+
+footer p {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 1rem;
+}
+
